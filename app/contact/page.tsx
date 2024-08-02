@@ -26,6 +26,12 @@ const ContactPage = () => {
     <div className="bg-gray-100 min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Contact Us</h1>
+        <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-center">Schedule a Meeting with Our Experts</h2>
+          <div className="calendly-inline-widget" style={{ minWidth: '320px', height: '700px' }}>
+            <InlineWidget url="https://calendly.com/yosefkohanyk/30min" styles={{ height: '100%' }} />
+          </div>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
@@ -104,12 +110,6 @@ const ContactPage = () => {
               <p className="mb-2">Email: info@menifeelogistics.com</p>
               <p>Business Hours: Monday - Friday, 9am - 5pm PST</p>
             </div>
-          </div>
-        </div>
-        <div className="mt-16 bg-white rounded-lg shadow-lg p-8">
-      <h2 className="text-2xl font-semibold mb-6 text-center">Schedule a Meeting with Our Experts</h2>
-      <div className="calendly-inline-widget" style={{ minWidth: '320px', height: '700px' }}>
-        <InlineWidget url="https://calendly.com/yosefkohanyk/30min" styles={{ height: '100%' }} />
           </div>
         </div>
       </div>
