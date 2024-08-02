@@ -21,13 +21,13 @@ const AboutPage = () => {
                 Since our inception, we've been dedicated to providing innovative solutions that help businesses of all sizes streamline their supply chain operations and focus on growth. Our commitment to excellence and customer satisfaction has made us a trusted partner for businesses across various industries.
               </p>
             </div>
-            <div className="relative h-64 md:h-auto">
+            <div className="relative h-auto">
               <Image
-                src="/images/menifee-warehouse.png"
+                src="/menifee-warehouse.jpg"
                 alt="Menifee Logistics Warehouse"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="rounded-lg shadow-lg object-cover"
+                width={500}
+                height={300}
+                className="rounded-lg shadow-lg object-cover w-full"
               />
             </div>
           </div>
