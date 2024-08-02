@@ -16,6 +16,7 @@ const Header = () => {
           <Link href="/" className="nav-link text-gray-800 text-sm">Home</Link>
           <Link href="/services" className="nav-link text-gray-800 text-sm">Services</Link>
           <Link href="/pricing" className="nav-link text-gray-800 text-sm">Pricing</Link>
+          <Link href="/about" className="nav-link text-gray-800 text-sm">About Us</Link>
           <Link href="/contact" className="nav-link text-gray-800 text-sm">Contact</Link>
         </nav>
         <div className="md:hidden">
@@ -32,6 +33,7 @@ const Header = () => {
             <Link href="/" className="nav-link text-gray-800 text-sm">Home</Link>
             <Link href="/services" className="nav-link text-gray-800 text-sm">Services</Link>
             <Link href="/pricing" className="nav-link text-gray-800 text-sm">Pricing</Link>
+            <Link href="/about" className="nav-link text-gray-800 text-sm">About Us</Link>
             <Link href="/contact" className="nav-link text-gray-800 text-sm">Contact</Link>
           </nav>
         </div>
