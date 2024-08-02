@@ -1,12 +1,12 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import AnimatedSection from '../components/common/AnimatedSection'
+import { FaWarehouse, FaShippingFast, FaAmazon, FaCogs } from 'react-icons/fa'
 
 const services = [
   {
     title: '3PL/4PL Solutions',
     description: 'Comprehensive logistics management tailored to your business needs. We handle everything from warehousing to transportation, providing end-to-end supply chain solutions.',
-    icon: '/images/3pl-icon.svg',
+    icon: FaWarehouse,
     details: [
       'Warehousing and Distribution',
       'Transportation Management',
@@ -17,7 +17,7 @@ const services = [
   {
     title: 'Fulfillment Services',
     description: 'Efficient pick, pack, and ship operations to streamline your order processing. We ensure fast and accurate order fulfillment for e-commerce businesses of all sizes.',
-    icon: '/images/fulfillment-icon.svg',
+    icon: FaShippingFast,
     details: [
       'Order Processing',
       'Pick and Pack',
@@ -28,7 +28,7 @@ const services = [
   {
     title: 'FBA Prep',
     description: "Expert preparation of your products for Amazon FBA compliance. We handle all the requirements to ensure your products are ready for Amazon's fulfillment centers.",
-    icon: '/images/fba-icon.svg',
+    icon: FaAmazon,
     details: [
       'Product Inspection',
       'Labeling and Packaging',
@@ -39,7 +39,7 @@ const services = [
   {
     title: 'Custom Requests',
     description: 'Flexible solutions for unique logistics challenges, including crowdsourcing. We adapt to your specific needs and provide innovative solutions.',
-    icon: '/images/custom-icon.svg',
+    icon: FaCogs,
     details: [
       'Customized Packaging',
       'Kitting and Assembly',
@@ -64,7 +64,7 @@ const ServicesPage = () => {
             <AnimatedSection key={index}>
               <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl">
                 <div className="flex items-center mb-4">
-                  <Image src={service.icon} alt={service.title} width={48} height={48} className="mr-4" />
+                  <service.icon className="w-12 h-12 mr-4 text-blue-600" />
                   <h2 className="text-2xl font-semibold">{service.title}</h2>
                 </div>
                 <p className="text-gray-700 mb-4">{service.description}</p>
