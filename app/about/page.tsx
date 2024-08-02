@@ -23,7 +23,7 @@ const AboutPage = () => {
             </div>
             <div className="relative h-64 md:h-auto">
               <Image
-                src="/images/menifee-warehouse.jpg"
+                src="/images/menifee-warehouse.png"
                 alt="Menifee Logistics Warehouse"
                 layout="fill"
                 objectFit="cover"
