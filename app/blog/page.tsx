@@ -4,21 +4,21 @@ import Image from 'next/image'
 const blogPosts = [
   {
     title: "The Future of 3PL: Trends to Watch",
-    excerpt: "Explore the emerging trends shaping the future of third-party logistics and how they might impact your business.",
+    excerpt: "Explore the emerging trends shaping the future of third-party logistics, including AI, IoT, robotics, blockchain, and last-mile innovations. Discover how these advancements will impact your business and the entire logistics industry.",
     image: "/images/blog-future-3pl.jpg",
     date: "May 15, 2023",
     slug: "future-of-3pl-trends"
   },
   {
     title: "Optimizing Your Supply Chain for E-commerce Growth",
-    excerpt: "Learn strategies to streamline your supply chain and support rapid e-commerce expansion.",
+    excerpt: "Learn essential strategies to streamline your supply chain and support rapid e-commerce expansion. From implementing advanced order management systems to leveraging data analytics and collaborating with 3PL partners, discover how to create a more agile and responsive supply chain.",
     image: "/images/blog-ecommerce-growth.jpg",
     date: "April 28, 2023",
     slug: "optimizing-supply-chain-ecommerce"
   },
   {
     title: "Sustainability in Logistics: Best Practices",
-    excerpt: "Discover how to implement eco-friendly practices in your logistics operations without sacrificing efficiency.",
+    excerpt: "Discover comprehensive approaches to implement eco-friendly practices in your logistics operations without sacrificing efficiency. Learn about green transportation, sustainable packaging, energy-efficient warehousing, and other key strategies to reduce your environmental impact and enhance your brand reputation.",
     image: "/images/blog-sustainability.jpg",
     date: "April 10, 2023",
     slug: "sustainability-in-logistics"
@@ -37,9 +37,9 @@ const BlogPage = () => {
               <div className="p-6">
                 <p className="text-gray-600 text-sm mb-2">{post.date}</p>
                 <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
-                <p className="text-gray-700 mb-4">{post.excerpt}</p>
-                <Link href={`/blog/${post.slug}`} className="text-blue-600 hover:text-blue-800 font-medium">
-                  Read More &rarr;
+                <p className="text-gray-700 mb-4 line-clamp-3">{post.excerpt}</p>
+                <Link href={`/blog/${post.slug}`} className="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-300">
+                  Read More
                 </Link>
               </div>
             </div>
