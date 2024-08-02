@@ -1,12 +1,12 @@
-import Image from 'next/image'
+import { FaShopify, FaWordpress, FaMagento, FaShoppingCart, FaAmazon, FaEbay } from 'react-icons/fa'
 
 const integrations = [
-  { name: "Shopify", logo: "/images/shopify-logo.svg" },
-  { name: "WooCommerce", logo: "/images/woocommerce-logo.svg" },
-  { name: "Magento", logo: "/images/magento-logo.svg" },
-  { name: "BigCommerce", logo: "/images/bigcommerce-logo.svg" },
-  { name: "Amazon", logo: "/images/amazon-logo.svg" },
-  { name: "eBay", logo: "/images/ebay-logo.svg" },
+  { name: "Shopify", icon: FaShopify },
+  { name: "WooCommerce", icon: FaWordpress },
+  { name: "Magento", icon: FaMagento },
+  { name: "BigCommerce", icon: FaShoppingCart },
+  { name: "Amazon", icon: FaAmazon },
+  { name: "eBay", icon: FaEbay },
 ]
 
 const Integrations = () => {
@@ -19,8 +19,9 @@ const Integrations = () => {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8">
             {integrations.map((integration, index) => (
-              <div key={index} className="flex items-center justify-center bg-white p-4 rounded-lg shadow-md">
-                <Image src={integration.logo} alt={integration.name} width={120} height={60} objectFit="contain" />
+              <div key={index} className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md">
+                <integration.icon className="text-4xl mb-2" />
+                <span className="text-sm">{integration.name}</span>
               </div>
             ))}
           </div>
