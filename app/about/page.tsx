@@ -25,9 +25,9 @@ const AboutPage = () => {
               <Image
                 src="/images/menifee-warehouse.png"
                 alt="Menifee Logistics Warehouse"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="rounded-lg shadow-lg object-cover"
               />
             </div>
           </div>
