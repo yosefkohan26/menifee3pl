@@ -1,28 +1,28 @@
 'use client';
-import Image from 'next/image'
 import Link from 'next/link'
 import AnimatedSection from '../common/AnimatedSection'
+import { FaWarehouse, FaBoxOpen, FaAmazon, FaCogs } from 'react-icons/fa'
 
 const services = [
   {
     title: '3PL/4PL Solutions',
     description: 'Comprehensive logistics management tailored to your business needs, including inventory management and order fulfillment.',
-    icon: '/images/3pl-icon.svg',
+    icon: FaWarehouse,
   },
   {
     title: 'Fulfillment Services',
     description: 'Efficient pick, pack, and ship operations to streamline your order processing and improve customer satisfaction.',
-    icon: '/images/fulfillment-icon.svg',
+    icon: FaBoxOpen,
   },
   {
     title: 'FBA Prep',
     description: 'Expert preparation of your products for Amazon FBA compliance, ensuring smooth delivery to Amazon warehouses.',
-    icon: '/images/fba-icon.svg',
+    icon: FaAmazon,
   },
   {
     title: 'Custom Requests',
     description: 'Flexible solutions for unique logistics challenges, including crowdsourcing, special packaging, and more.',
-    icon: '/images/custom-icon.svg',
+    icon: FaCogs,
   },
 ]
 
@@ -38,7 +38,7 @@ const Services = () => {
             <AnimatedSection key={index}>
               <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
                 <div className="flex justify-center mb-4">
-                  <Image src={service.icon} alt={service.title} width={64} height={64} className="text-blue-600" />
+                  <service.icon className="text-blue-600 text-5xl" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-center">{service.title}</h3>
                 <p className="text-gray-600 mb-4 text-center">{service.description}</p>
